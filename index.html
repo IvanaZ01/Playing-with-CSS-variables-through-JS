@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Playing with CSS variables through <span class="color">JavaScript</span></h1>
+
+        <div class="cntrls flex">
+            <div class="prop-holder flex">
+                <p class="prop">Blur</p>
+                <input type="range" class="blur-range" value="0" data-sizing="px" name="blur">
+            </div>
+
+        <div class="prop-holder flex">
+            <p class="prop">Spacing</p> 
+            <input type="range" class="spacing-range" value="0" data-sizing="px" name="spacing">
+        </div>
+
+           <div class="prop-holder flex">
+               <p class="prop">Color</p>
+               <input type="color" class="color-picker" name="color">
+            </div>
+
+        </div> <!--cntrls-->
+
+        <div class='img-space'>
+            <img src="https://source.unsplash.com/random/400x400" class="img" alt="photo for change">
+        </div>
+    </div> <!--wrapper-->
+    <script src="script.js"></script>
+</body>
+</html>

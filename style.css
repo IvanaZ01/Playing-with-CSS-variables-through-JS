@@ -1,0 +1,60 @@
+:root {
+    --blur: 0px;
+    --spacing: 0px;
+    --color: #f55151;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+}
+
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.wrapper h1{
+    text-align: center;
+    margin: 1em 0 1em;
+}
+
+.flex {
+    display: flex;
+}
+
+.cntrls{
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.prop{
+    font-size: 1.3rem;
+}
+
+.prop-holder{
+    margin-bottom: 1.5em;
+    justify-content: space-between;
+}
+
+.img-space{
+    background-color: var(--color);
+    padding: var(--spacing);
+    overflow: hidden;
+    height: 400px;
+}
+
+.img {
+    width: 100%;
+    filter: blur(var(--blur));
+}
+
+.color{
+    color: var(--color);
+}
